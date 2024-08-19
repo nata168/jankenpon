@@ -85,40 +85,4 @@ function playRound() {
         break;
     }
   }
-
-  return roundWinner;
-  
 }
-
-function playGame() {
-  let currentRoundWinner;
-  let computerScore = 0;
-  let humanScore = 0;
-
-  for (let i=1; i<=5; i++) {
-    currentRoundWinner = playRound();
-    if (currentRoundWinner === "computer") {
-      computerScore += 1;
-    }
-    else if (currentRoundWinner === "human") {
-      humanScore += 1;
-    }
-    else if (currentRoundWinner === "draw") {
-      humanScore += 0;
-      computerScore += 0;
-    }
-    console.log(`Current Score: Computer ${computerScore} Human ${humanScore}`);
-  }
-
-  if (computerScore > humanScore) {
-    console.log("Computer win!");
-  }
-  else if (computerScore < humanScore) {
-    console.log("Human win!");
-  }
-  else {
-    console.log("Draw.");
-  }
-}
-
-playGame();

@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jankenpon</title>
-</head>
-<body style="background-color: #000000;">
   <script src="script.js"></script>
+  <script src="script-event.js" defer></script>
+</head>
+<body>
+  <button class="rock-button">Rock</button>
+  <button class="paper-button">Paper</button>
+  <button class="scissor-button">Scissor</button>
+  <div id="winner-message">Start playing by choosing!</div>
+  <div id="score-message">Current Score: Human <span id="human-score">0</span> Computer <span id="computer-score">0</span></div>
 </body>
 </html>
